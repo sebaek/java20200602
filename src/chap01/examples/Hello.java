@@ -1,13 +1,13 @@
 package chap01.examples;
 
 /*
-ÀÛ¼ºÀÚ: ½Å¿ë±Ç
-ÀÛ¼ºÀÏ: 2015.12.31
+ì‘ì„±ì: ì‹ ìš©ê¶Œ
+ì‘ì„±ì¼: 2015.12.31
 */
 public class Hello {
-	// ÇÁ·Î±×·¥ ½ÇÇà ÁøÀÔÁ¡
+	// í”„ë¡œê·¸ë¨ ì‹¤í–‰ ì§„ì…ì 
 	public static void main(String[] args) {
-		//ÄÜ¼Ö¿¡ Ãâ·ÂÇÏ´Â ½ÇÇà¹®
+		//ì½˜ì†”ì— ì¶œë ¥í•˜ëŠ” ì‹¤í–‰ë¬¸
 		System.out.println("Hello, welcome to the java world");
 	} //end of main
 }// end of class
