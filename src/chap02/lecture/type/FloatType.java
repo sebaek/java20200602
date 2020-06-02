@@ -21,6 +21,12 @@ public class FloatType {
 
 		d = 2e-3; // 2 * 10^-3 => 0.002
 		System.out.println(d);
+		
+		// 실수 표현의 한계
+		double d1 = 0.1;
+		double d2 = 0.2;
+		double d3 = d1 + d2;
+		System.out.println(d3);
 	}
 }
 
