@@ -58,4 +58,20 @@ public class Solution {
 		return negative ? b2 : b1;
 	}
 
+	public String notString(String str) {
+
+		String start = "";
+
+		if (str.length() >= 3) {
+			start = str.substring(0, 3);
+		}
+
+		if (start.equals("not")) {
+			return str;
+		} else {
+			return "not " + str;
+		}
+
+	}
+
 }
