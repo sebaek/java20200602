@@ -1,9 +1,16 @@
 package chap04.lecture.ifelse.sample;
 
+import java.util.Scanner;
+
 public class RSPGame {
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
 		// 1.가위 2.바위 3.보
-		int user = (int) (Math.random() * 3) + 1;
+		
+		System.out.println("선택: 1.가위 2.바위 3.보>");
+		String userInput = scanner.nextLine();
+		
+		int user = Integer.valueOf(userInput);
 		int com = (int) (Math.random() * 3) + 1;
 
 		String message;
