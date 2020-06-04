@@ -35,4 +35,27 @@ public class Solution {
 		return diff;
 	}
 
+	public boolean parrotTrouble(boolean talking, int hour) {
+
+		return talking && (hour < 7 || hour > 20);
+	}
+
+	public boolean makes10(int a, int b) {
+		boolean b1 = (a == 10) || (b == 10);
+		boolean b2 = (a + b) == 10;
+
+		return b1 || b2;
+	}
+
+	public boolean nearHundred(int n) {
+		return (n >= 90 && n <= 110) || (n >= 190 && n <= 210);
+	}
+
+	public boolean posNeg(int a, int b, boolean negative) {
+		boolean b1 = (a > 0 && b < 0) || (a < 0 && b > 0);
+		boolean b2 = a < 0 && b < 0;
+
+		return negative ? b2 : b1;
+	}
+
 }
