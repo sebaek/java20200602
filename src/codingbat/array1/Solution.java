@@ -26,4 +26,24 @@ public class Solution {
 		return nums[0] + nums[1] + nums[2];
 	}
 
+	public int[] rotateLeft3(int[] nums) {
+		/*
+		 * int a = nums[0]; int b = nums[1]; int c = nums[2];
+		 * 
+		 * int[] res = {b, c, a};
+		 */
+
+		int first = nums[0];
+		for (int i = 0; i < nums.length - 1; i++) {
+			nums[i] = nums[i + 1];
+		}
+		nums[nums.length - 1] = first;
+
+		return nums;
+	}
+
+	public int[] reverse3(int[] nums) {
+		return new int[] { nums[2], nums[1], nums[0] };
+	}
+
 }
