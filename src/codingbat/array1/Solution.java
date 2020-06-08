@@ -43,7 +43,14 @@ public class Solution {
 	}
 
 	public int[] reverse3(int[] nums) {
-		return new int[] { nums[2], nums[1], nums[0] };
+		int[] res = new int[nums.length];
+
+		for (int i = 0; i < nums.length; i++) {
+			res[nums.length - 1 - i] = nums[i];
+		}
+
+		return res;
+
 	}
 
 }
