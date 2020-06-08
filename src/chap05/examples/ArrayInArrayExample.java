@@ -13,6 +13,7 @@ public class ArrayInArrayExample {
 		int[][] englishScores = new int[2][];
 		englishScores[0] = new int[2];
 		englishScores[1] = new int[3];
+		
 		for (int i = 0; i < englishScores.length; i++) {
 			for (int k = 0; k < englishScores[i].length; k++) {
 				System.out.println("englishScores[" + i + "][" + k + "]=" + englishScores[i][k]);
@@ -29,6 +30,17 @@ public class ArrayInArrayExample {
 		System.out.println();
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
