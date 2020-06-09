@@ -74,4 +74,46 @@ public class Solution {
 
 	}
 
+	public String missingChar(String str, int n) {
+		// String res = "";
+
+		// for (int i = 0; i < str.length(); i++) {
+		// if (i != n) {
+		// res += str.charAt(i);
+		// }
+		// }
+
+		return str.substring(0, n) + str.substring(n + 1);
+	}
+
+	public String frontBack(String str) {
+		if (str.length() < 2) {
+			return str;
+		}
+
+		char first = str.charAt(0);
+		char last = str.charAt(str.length() - 1);
+
+		String mid = str.substring(1, str.length() - 1);
+
+		return last + mid + first;
+	}
+
+	public String front3(String str) {
+		int len = str.length() >= 3 ? 3 : str.length();
+		String front = str.substring(0, len);
+
+		return front + front + front;
+	}
+
+	public String backAround(String str) {
+		char last = str.charAt(str.length() - 1);
+
+		return last + str + last;
+	}
+
+	public boolean or35(int n) {
+		return (n % 3 == 0) || (n % 5 == 0);
+	}
+
 }
