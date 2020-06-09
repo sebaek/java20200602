@@ -116,4 +116,39 @@ public class Solution {
 		return (n % 3 == 0) || (n % 5 == 0);
 	}
 
+	public String front22(String str) {
+		String front = "";
+		if (str.length() >= 2) {
+			front = str.substring(0, 2);
+		} else {
+			front = str;
+		}
+
+		return front + str + front;
+	}
+
+	public boolean startHi(String str) {
+		String front = "";
+
+		if (str.length() >= 2) {
+			front = str.substring(0, 2);
+		}
+
+		return front.equals("hi");
+	}
+
+	public boolean icyHot(int temp1, int temp2) {
+		int min = Math.min(temp1, temp2);
+		int max = Math.max(temp1, temp2);
+
+		return min < 0 && max > 100;
+	}
+
+	public boolean in1020(int a, int b) {
+		boolean aa = a >= 10 && a <= 20;
+		boolean bb = b >= 10 && b <= 20;
+
+		return aa || bb;
+	}
+
 }
