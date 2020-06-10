@@ -151,4 +151,71 @@ public class Solution {
 		return aa || bb;
 	}
 
+	public boolean hasTeen(int a, int b, int c) {
+		boolean ateen = a >= 13 && a <= 19;
+		boolean bteen = b >= 13 && b <= 19;
+		boolean cteen = c >= 13 && c <= 19;
+
+		return ateen || bteen || cteen;
+	}
+
+	public boolean loneTeen(int a, int b) {
+		boolean ateen = a >= 13 && a <= 19;
+		boolean bteen = b >= 13 && b <= 19;
+
+		return ateen ^ bteen;
+	}
+
+	public String delDel(String str) {
+		int i = str.indexOf("del");
+
+		if (i == 1) {
+			String res = "";
+			res += str.charAt(0);
+			res += str.substring(4);
+			return res;
+
+		} else {
+			return str;
+		}
+
+	}
+
+	public boolean mixStart(String str) {
+		return str.indexOf("ix") == 1;
+	}
+
+	public String startOz(String str) {
+		String first = "";
+		String second = "";
+		int len = str.length();
+
+		if (len >= 1) {
+			first = str.substring(0, 1);
+			if (!first.equals("o")) {
+				first = "";
+			}
+		}
+		if (len >= 2) {
+			second = str.substring(1, 2);
+			if (!second.equals("z")) {
+				second = "";
+			}
+		}
+
+		return first + second;
+
+	}
+
+	public int intMax(int a, int b, int c) {
+		// int m = a < b ? b : a;
+		// m = m < c ? c : m;
+
+		int m = Math.max(a, b);
+		m = Math.max(m, c);
+
+		return m;
+
+	}
+
 }
