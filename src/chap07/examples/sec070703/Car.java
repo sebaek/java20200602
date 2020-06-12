@@ -3,8 +3,11 @@ package chap07.examples.sec070703;
 import chap07.examples.sec070702.Tire;
 
 public class Car {
-	Tire[] tires = { new Tire("앞왼쪽", 6), new Tire("앞오른쪽", 2), new Tire("뒤왼쪽", 3), new Tire("뒤오른쪽", 4)
-
+	Tire[] tires = { 
+			new Tire("앞왼쪽", 6),
+			new Tire("앞오른쪽", 2),
+			new Tire("뒤왼쪽", 3),
+			new Tire("뒤오른쪽", 4)
 	};
 
 	int run() {
