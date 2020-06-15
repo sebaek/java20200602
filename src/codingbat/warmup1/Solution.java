@@ -218,4 +218,52 @@ public class Solution {
 
 	}
 
+	public int close10(int a, int b) {
+		int diffa = Math.abs(10 - a);
+		int diffb = Math.abs(10 - b);
+
+		int result = 0;
+
+		if (diffa < diffb) {
+			result = a;
+		} else if (diffa > diffb) {
+			result = b;
+		}
+
+		return result;
+	}
+
+	public boolean in3050(int a, int b) {
+		boolean a3040 = a >= 30 && a <= 40;
+		boolean b3040 = b >= 30 && b <= 40;
+
+		boolean a4050 = a >= 40 && a <= 50;
+		boolean b4050 = b >= 40 && b <= 50;
+
+		return (a3040 && b3040) || (a4050 && b4050);
+	}
+
+	public int max1020(int a, int b) {
+		int tempa = (a >= 10 && a <= 20) ? a : 0;
+		int tempb = (b >= 10 && b <= 20) ? b : 0;
+
+		return Math.max(tempa, tempb);
+	}
+
+	public boolean stringE(String str) {
+		int cnt = 0;
+
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == 'e') {
+				cnt++;
+			}
+
+			if (cnt > 3) {
+				return false;
+			}
+		}
+
+		return 1 <= cnt && cnt <= 3;
+	}
+
 }
