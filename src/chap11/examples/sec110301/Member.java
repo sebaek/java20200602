@@ -8,6 +8,11 @@ public class Member {
 	}
 	
 	@Override
+	public int hashCode() {
+		return id.hashCode();
+	}
+	
+	@Override
 	public boolean equals(Object obj) {
 		if (obj instanceof Member) {
 			Member member = (Member) obj;
@@ -19,3 +24,22 @@ public class Member {
 		return false;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
