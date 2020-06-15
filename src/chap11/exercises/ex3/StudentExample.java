@@ -3,6 +3,9 @@ package chap11.exercises.ex3;
 import java.util.HashMap;
 
 public class StudentExample {
+	// 문제 1번 : 4번
+	// 문제 2번 : hashcode(), equals()
+	
 	public static void main(String[] args) {
 		HashMap<Student, String> hashMap = new HashMap<Student, String>();
 		
@@ -12,3 +15,14 @@ public class StudentExample {
 		System.out.println("1번 학생의 총점: " + score);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
