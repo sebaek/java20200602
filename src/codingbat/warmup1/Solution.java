@@ -266,4 +266,35 @@ public class Solution {
 		return 1 <= cnt && cnt <= 3;
 	}
 
+	public boolean lastDigit(int a, int b) {
+		int alast = a % 10;
+		int blast = b % 10;
+
+		return alast == blast;
+	}
+
+	public String endUp(String str) {
+		int len = str.length();
+
+		if (len <= 3) {
+			return str.toUpperCase();
+		} else {
+			String left = str.substring(0, len - 3);
+			String right = str.substring(len - 3);
+
+			return left + right.toUpperCase();
+		}
+
+	}
+
+	public String everyNth(String str, int n) {
+		String res = "";
+
+		for (int i = 0; i < str.length(); i += n) {
+			res += str.charAt(i);
+		}
+
+		return res;
+	}
+
 }
