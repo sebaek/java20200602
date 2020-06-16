@@ -21,7 +21,7 @@ public interface RemoteControl {
 	}
 	
 	//정적 메소드
-	static void changeBatter() {
+	static void changeBattery() {
 		System.out.println("건전지를 교환합니다.");
 	}
 }

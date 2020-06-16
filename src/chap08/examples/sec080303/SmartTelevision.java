@@ -1,17 +1,17 @@
-package chap08.examples.sec080301;
+package chap08.examples.sec080303;
 
 import chap08.examples.sec080205.RemoteControl;
 
-public class Audio implements RemoteControl {
+public class SmartTelevision implements RemoteControl, Searchable {
 	private int volume;
 
 	public void turnOn() {
-		System.out.println("Audio를 켭니다.");
+		System.out.println("TV를 켭니다.");
 	}
 
 	@Override
 	public void turnOff() {
-		System.out.println("Audio를 끕니다.");
+		System.out.println("TV를 끕니다.");
 	}
 
 	@Override
@@ -23,6 +23,12 @@ public class Audio implements RemoteControl {
 		} else {
 			this.volume = volume;
 		}
-		System.out.println("현재 Audio 볼륨: " + volume);
+		System.out.println("현재 TV 볼륨: " + volume);
 	}
+
+	@Override
+	public void search(String url) {
+		System.out.println(url + "을 검색합니다.");
+	}
+
 }

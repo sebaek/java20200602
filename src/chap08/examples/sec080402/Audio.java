@@ -1,9 +1,10 @@
-package chap08.examples.sec080301;
+package chap08.examples.sec080402;
 
 import chap08.examples.sec080205.RemoteControl;
 
 public class Audio implements RemoteControl {
 	private int volume;
+	private boolean mute;
 
 	public void turnOn() {
 		System.out.println("Audio를 켭니다.");
@@ -25,4 +26,24 @@ public class Audio implements RemoteControl {
 		}
 		System.out.println("현재 Audio 볼륨: " + volume);
 	}
+	
+	@Override
+	public void setMute(boolean mute) {
+		this.mute = mute;
+		if (mute) {
+			System.out.println("Audio 무음 처리합니다.");
+		} else {
+			System.out.println("Audio 무음 해제합니다.");
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
