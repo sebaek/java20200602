@@ -4,7 +4,9 @@ import java.lang.reflect.Method;
 
 public class PrintAnnotationExample {
 	public static void main(String[] args) {
-		Method[] declaredMethods = Service.class.getDeclaredMethods();
+//		Method[] declaredMethods = Service.class.getDeclaredMethods();
+		Class c1 = Service.class;
+		Method[] declaredMethods = c1.getDeclaredMethods();
 		
 		for (Method method : declaredMethods) {
 			if (method.isAnnotationPresent(PrintAnnotation.class)) {
@@ -25,6 +27,14 @@ public class PrintAnnotationExample {
 				
 				System.out.println();
 			}
+			
+			
+			
+			
+			
+			
+			
+			
 		}
 	}
 }
