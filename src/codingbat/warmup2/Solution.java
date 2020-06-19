@@ -157,4 +157,34 @@ public class Solution {
 		return result;
 	}
 
+	public String altPairs(String str) {
+		String result = "";
+
+		for (int i = 0; i < str.length(); i++) {
+			if (i % 4 == 0 || (i - 1) % 4 == 0) {
+				result += str.charAt(i);
+			}
+		}
+
+		return result;
+	}
+
+	public String stringYak(String str) {
+		return str.replace("yak", "");
+		// String result = "";
+
+		// int i = 0;
+
+		// while (i < str.length()) {
+		// if (i < str.length() - 2 && str.substring(i, i+3).equals("yak")) {
+		// i += 3;
+		// } else {
+		// result += str.charAt(i);
+		// i++;
+		// }
+		// }
+
+		// return result;
+	}
+
 }
